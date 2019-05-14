@@ -1,0 +1,36 @@
+{
+    "title": "Survival Situations",
+    "scenes" :
+	[
+	  {
+	     "id": "1",
+	     "title": "Stage 1",
+	     "video": "./assets/videos/dchomevid0315.mp4",
+	     "options": [{"text": "Do thing 2...", "link": "2"}, {"text": "Do thing 3...", "link": "3"}]
+	  },
+	  {
+	     "id": "2",
+	     "title": "Stage 2",
+	     "video": "./assets/videos/discochomevid0326.mp4",
+	     "options": [{"text": "Do thing 4", "link": "4"}, {"text": "Do thing 3...", "link": "3"}]
+	  },
+	  {
+	     "id": "3",
+	     "title": "Stage 3",
+	     "video": "./assets/videos/homepagevid2.mp4",
+	     "options": [{"text": "Do thing 1", "link": "1"}]
+	  },
+          {
+            "id": "4",
+            "title": "Final stage",
+            "video": "./assets/videos/dchomevid0315.mp4",
+            "end": true
+          }
+        ],
+     "credits": 
+        [
+            {"role": "Director", "name": "Old Flaggerty"},
+            {"role": "Starring", "name": "Old Flaggerty"},
+            {"role": "Written by", "name": "Old Flaggerty"}
+        ]
+}

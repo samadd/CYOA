@@ -1,0 +1,93 @@
+/* 
+MIT License
+
+Copyright (c) 2018 Neutralinojs
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow:hidden;
+}
+#cyoa-app {
+    height: 100%;
+    background: #000;
+    color: #efefef;
+}
+video {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+ul {
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    z-index:2;
+}
+li {
+    display: inline-block;
+    padding: 1em;
+    margin: 0 1em;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.quit {
+    position:absolute;
+    z-index: 2;
+    top: 0;
+    right:0;
+    background: rgba(0,0,0,0.8);
+    padding: 0.25em;
+    cursor: pointer;
+    border-bottom-left-radius: 8px;
+}
+
+.fader {
+    opacity: 0;
+    transition: all 0.5s;
+}
+.fader.on {
+    opacity: 1;
+}
+
+.credits {
+    position: absolute;
+    transition: all 5s;
+    width: 100%;
+    text-align: center;
+}
